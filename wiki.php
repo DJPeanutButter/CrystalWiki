@@ -32,7 +32,7 @@
     //Check for GET crystal
     if (isset($_GET["crystal"])){
         $pageType = "crystal";
-        $wikiData = getCrystalInfoByName($_GET["crystal"]);
+        $wikiData = wikiGetCrystalInfoByName($_GET["crystal"]);
         $wikiMenuData = wikiSelect ("Crystals","Name");
     }else{
         $pageType = "landing";

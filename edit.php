@@ -8,7 +8,7 @@
         require_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
         
         if (isset($_GET["crystal"])){
-            if (!$wikiData = getCrystalInfoByName($_GET["crystal"])){
+            if (!$wikiData = wikiGetCrystalInfoByName($_GET["crystal"])){
                 exit("Could not find crystal by the name of ".$_GET["crystal"]);
             }
 ?>

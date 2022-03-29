@@ -14,7 +14,7 @@ These are the known tasks that need done, not listed in any particular order.
 - [ ] wiki.js currently only has a redirect function, which does not work.
 - [ ] wikiFunctions.php rename wikiReadFromDB
 - [ ] wikiFunctions.php create inverse of wikiReadFromDB (with name analagous to the new name for wikiReadFromDB)
-- [ ] wikiDBConfig.php (in PHP folder) create functions so that wikiQuery does not need to be called directly
+- [x] wikiDBConfig.php (in PHP folder) create functions so that wikiQuery does not need to be called directly
 
 ## Functions and Includes
 Reference for functions and such, organized by include file
@@ -44,7 +44,7 @@ Returns an array of rows or an error message in the case of failure.
 
 Returns an array of rows from the specified table or an error message in the case of failure
 
-#### getCrystalInfoByName ($crystal)
+#### wikiGetCrystalInfoByName ($crystal)
 Returns a row from the Crystals table as an array or an error message in the case of failure.
 
 #### wikiInsert($table, $arrCols, $arrVals)
