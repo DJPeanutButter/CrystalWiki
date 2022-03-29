@@ -8,3 +8,5 @@ These are the pages that need attention, not listed in any particular order
 - crystalSort.php
   - Implement autocomplete in a search bar
   - Query based on selected chakras, zodiacs, etc...
+- menu.php
+  - Yet to be created at all. Thought needs to go into this so that it can be called from another php page without messing up formatting (on the page & in the source)
