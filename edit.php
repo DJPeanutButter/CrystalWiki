@@ -12,10 +12,11 @@
                 exit("No entry found for ". $_GET["crystal"]);
             }
 ?>
-        <title>Edit <?echo $wikiData["name"]?></title>
+      <title>Edit <?echo $wikiData["name"]?></title>
 <?}else{?>
-        <title>No crystal selected!</title>
+      <title>No crystal selected!</title>
 <?}?>
+      <link rel="stylesheet" href="wikiStyles.css">
     </head>
     <body>
 <?
