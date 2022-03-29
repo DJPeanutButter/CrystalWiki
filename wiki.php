@@ -32,11 +32,11 @@
     //Check for GET crystal
     if (isset($_GET["crystal"])){
         $pageType = "crystal";
-        $wikiData = wikiQuery ("SELECT * FROM Crystals WHERE Name=\"".$_GET["crystal"]."\"")[0];
-        $wikiMenuData = wikiQuery ("SELECT Name FROM Crystals ORDER BY Name");
+        $wikiData = getCrystalInfoByName($_GET["crystal"]);
+        $wikiMenuData = wikiSelect ("Crystals","Name");
     }else{
         $pageType = "landing";
-        $wikiData = wikiQuery ("SELECT Name FROM Crystals ORDER BY Name");
+        $wikiData = wikiSelect ("Crystals","Name");
     }
 ?>
     </head>

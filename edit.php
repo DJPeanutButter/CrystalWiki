@@ -8,8 +8,8 @@
         require_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
         
         if (isset($_GET["crystal"])){
-            if (!$wikiData = wikiQuery ("SELECT * FROM Crystals WHERE Name=\"".$_GET["crystal"]."\"")[0]){
-                exit("No entry found for ". $_GET["crystal"]);
+            if (!$wikiData = getCrystalInfoByName($_GET["crystal"])){
+                exit("Could not find crystal by the name of ".$_GET["crystal"]);
             }
 ?>
       <title>Edit <?echo $wikiData["name"]?></title>

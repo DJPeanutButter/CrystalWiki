@@ -33,7 +33,19 @@ This file is in the PHP folder on the server, and can be accessed by including `
 #### wikiQuery($query)
 `$query` is the actual query you want to send to the database. While this function does prepare the query, it is advised to use a more specific function where applicable for security purposes.
 
-Returns an array of rows returned by the query if successful and an error message if unsuccessful.
+Returns an array of rows or an error message in the case of failure.
+
+#### wikiSelect($table,$arrCols,$orderBy = "")
+`$table` is a string containing the name of the table you wish to insert into.
+
+`$arrCols` is an array of strings of the names of the columns you wish to insert data into.
+
+`$orderBy` is an array of the values by which you wish to sort the results.
+
+Returns an array of rows from the specified table or an error message in the case of failure
+
+#### getCrystalInfoByName ($crystal)
+Returns a row from the Crystals table as an array or an error message in the case of failure.
 
 #### wikiInsert($table, $arrCols, $arrVals)
 `$table` is a string containing the name of the table you wish to insert into.
