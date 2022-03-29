@@ -2,7 +2,7 @@
 <!--
   File: wiki.php
   Created 3/13/22
-  By Dani Lawless
+  By Jonny Lawless
   
   Dependancies
     wiki.js

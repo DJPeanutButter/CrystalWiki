@@ -3,7 +3,7 @@
    * wikiCreate.php
    *
    * Created 3/14/22
-   * By Dani Lawless
+   * By Jonny Lawless
    *
    * Dependancies
    *   None

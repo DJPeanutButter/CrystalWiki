@@ -4,7 +4,7 @@
 /*
  * wikiRead.php
  * Created 3/14/22
- * By Dani Lawless
+ * By Jonny Lawless
  *
  */
     require_once ($_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php");

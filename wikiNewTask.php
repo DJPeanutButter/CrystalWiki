@@ -2,7 +2,7 @@
 /*
  * File: wikiNewTask.php
  * Created 3/15/22
- * By Dani Lawless
+ * By Jonny Lawless
  *
  *  Dependencies
  *    ../php/wikiDBConfig.php
