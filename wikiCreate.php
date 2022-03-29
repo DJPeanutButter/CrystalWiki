@@ -116,20 +116,21 @@
           }
 ?>
 <body>
-<script src="wiki.js"></script>
-<script>
+  <script src="wiki.js"></script>
+  <link rel="stylesheet" href="wikiStyles.css">
+  <script>
     wikiRedirectWithMessage("wiki.php",message);
-</script>
-<noscript>
+  </script>
+  <noscript>
     <p>If the page does not reload automatically, press the POST button.</p>
     <form action="wiki.php" method="post">
         <input type="hidden" name="message" value="JavaScript is disabled.">
         <input type="submit" value="POST">
     </form>
-</noscript>
-<p>If the page does not reload automatically, press the POST button.</p>
-<form action="wiki.php" method="post">
+  </noscript>
+  <p>If the page does not reload automatically, press the POST button.</p>
+  <form action="wiki.php" method="post">
     <input type="hidden" name="message" value="POST button pressed before page redirected.">
     <input type="submit" value="POST">
-</form>
+  </form>
 </body>
