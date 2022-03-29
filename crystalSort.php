@@ -30,19 +30,19 @@ include_once ("wikiFunctions.php");
             //initialize based on $sortBy value
             switch ($sortBy){
                 case "name":
-                    $wikiData = wikiQuery ("SELECT Name FROM Crystals ORDER BY Name");
+                    $wikiData = wikiSelect("Crystals","Name","Name");
                     break;
                 case "chakras":
-                    $wikiData = wikiQuery ("SELECT Name, Chakras FROM Crystals ORDER BY Chakras, Name");
+                    $wikiData = wikiSelect("Crystals",array("Name","Chakras"),array("Chakras","Name"));
                     break;
                 case "elements":
-                    $wikiData = wikiQuery ("SELECT Name, Elements FROM Crystals ORDER BY Elements DESC, Name");
+                    $wikiData = wikiSelect ("Crystals",array("Name","Elements"),array("Elements DESC","Name"));
                     break;
                 case "zodiac":
-                    $wikiData = wikiQuery ("SELECT Name, Zodiac FROM Crystals ORDER BY Zodiac DESC, Name");
+                    $wikiData = wikiSelect ("Crystals",array("Name","Zodiac"),array("Zodiac DESC", "Name"));
                     break;
                 case "planets":
-                    $wikiData = wikiQuery ("SELECT Name, Planets FROM Crystals ORDER BY Planets DESC, Name");
+                    $wikiData = wikiSelect ("Crystals",array("Name","Planets"),array("Planets DESC","Name"));
                     break;
                 default:
                     $fSortBy = false;
