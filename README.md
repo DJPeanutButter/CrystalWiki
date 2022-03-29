@@ -19,6 +19,8 @@ These are the pages that need attention, not listed in any particular order
 - wikiFunctions.php
   - rename wikiReadFromDB
   - create inverse of wikiReadFromDB (with name analagous to the new name for wikiReadFromDB)
+- wikiDBConfig.php (in PHP folder)
+  - create functions so that wikiQuery does not need to be called directly
 
 ## Functions and Includes
 Reference for functions and such, organized by include file
