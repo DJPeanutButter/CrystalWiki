@@ -9,19 +9,12 @@ These are the pages that need attention, not listed in any particular order
 - [ ] wikiStyles.css needs styles for tables, divs, links, buttons, [you name it!](https://youtu.be/oB9FrK2jMs4)
 - [ ] crystalSort.php implement autocomplete in a search bar
 - [ ] crystalSort.php query based on selected chakras, zodiacs, etc...
-
-
-- menu.php
-  - Yet to be created at all. Thought needs to go into this so that it can be called from another php page without messing up formatting (on the page & in the source)
-- wikiCreate.php
-  - String generation for chakras, planets, etc... need to be wrapped in a function and that function needs moved to wikiFunctions.php
-- wiki.js
-  - Currently only has a redirect function, which does not work.
-- wikiFunctions.php
-  - rename wikiReadFromDB
-  - create inverse of wikiReadFromDB (with name analagous to the new name for wikiReadFromDB)
-- wikiDBConfig.php (in PHP folder)
-  - create functions so that wikiQuery does not need to be called directly
+- [ ] menu.php needs to be created. Thought needs to go into this so that it can be called from another php page without messing up formatting (on the page & in the source)
+- [ ] wikiCreate.php string generation for chakras, planets, etc... need to be wrapped in a function and that function needs moved to wikiFunctions.php
+- [ ] wiki.js currently only has a redirect function, which does not work.
+- [ ] wikiFunctions.php rename wikiReadFromDB
+- [ ] wikiFunctions.php create inverse of wikiReadFromDB (with name analagous to the new name for wikiReadFromDB)
+- [ ] wikiDBConfig.php (in PHP folder) create functions so that wikiQuery does not need to be called directly
 
 ## Functions and Includes
 Reference for functions and such, organized by include file
