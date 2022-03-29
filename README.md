@@ -10,17 +10,22 @@ These are the known tasks that need done, not listed in any particular order.
 - [ ] crystalSort.php implement autocomplete in a search bar
 - [ ] crystalSort.php query based on selected chakras, zodiacs, etc...
 - [ ] menu.php needs to be created. Thought needs to go into this so that it can be called from another php page without messing up formatting (on the page & in the source)
-- [ ] wikiCreate.php string generation for chakras, planets, etc... need to be wrapped in a function and that function needs moved to wikiFunctions.php
+- [x] wikiCreate.php string generation for chakras, planets, etc... need to be wrapped in a function and that function needs moved to wikiFunctions.php
 - [ ] wiki.js currently only has a redirect function, which does not work.
-- [ ] wikiFunctions.php rename wikiReadFromDB
-- [ ] wikiFunctions.php create inverse of wikiReadFromDB (with name analagous to the new name for wikiReadFromDB)
+- [x] wikiFunctions.php rename wikiReadFromDB
+- [x] wikiFunctions.php create inverse of wikiReadFromDB (with name analagous to the new name for wikiReadFromDB)
 - [x] wikiDBConfig.php (in PHP folder) create functions so that wikiQuery does not need to be called directly
 
 ## Functions and Includes
 Reference for functions and such, organized by include file
 ### wikiFunctions.php
 
-#### wikiReadFromDB ($strInp)
+#### wikiDecode ($arrInp)
+`$arrInp` is an array of boolean values to be encoded into a string
+
+Returns a string representing the binary values of the provided array.
+
+#### wikiDecode ($strInp)
 `$strInp` is a string starting with a `{` and ending with a `}` with comma (and space) delimited binary values ie `{1, 1, 1, 0, 0, 1}`
 
 The spaces are actually necessary as of right now.
