@@ -6,12 +6,15 @@
    * By Jonny Lawless
    *
    * Dependancies
-   *   None
+   *   wikiFunctions.php
    *
    * TODO
    *   Reformat consonants, dissonants, planets, elements, zodiac
    *
    */
+    
+    require_once "wikiFunctions.php";
+    
     //Generate strings for $wikiChakras, $wikiPlanets, $wikiElements & $wikiZodiac
     $wikiChakras = wikiEncode(array(($_POST ["chakra1"] === "on"),
                                     ($_POST ["chakra2"] === "on"),
