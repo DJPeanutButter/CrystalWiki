@@ -16,6 +16,9 @@ These are the pages that need attention, not listed in any particular order
   - String generation for chakras, planets, etc... need to be wrapped in a function and that function needs moved to wikiFunctions.php
 - wiki.js
   - Currently only has a redirect function, which does not work.
+- wikiFunctions.php
+  - rename wikiReadFromDB
+  - create inverse of wikiReadFromDB (with name analagous to the new name for wikiReadFromDB)
 
 ## Functions and Includes
 Reference for functions and such, organized by include file
