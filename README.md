@@ -5,11 +5,12 @@ The database is accessible by including `$_SERVER['DOCUMENT_ROOT'] . "/../php/wi
 
 ## Current Projects
 These are the pages that need attention, not listed in any particular order
-[ ] wikiStyles.css
-    - Need styles for tables, divs, links, buttons, [you name it!](https://youtu.be/oB9FrK2jMs4)
-[ ] crystalSort.php
-    - Implement autocomplete in a search bar
-    - Query based on selected chakras, zodiacs, etc...
+
+-[ ] wikiStyles.css
+     - Need styles for tables, divs, links, buttons, [you name it!](https://youtu.be/oB9FrK2jMs4)
+-[ ] crystalSort.php
+     - Implement autocomplete in a search bar
+     - Query based on selected chakras, zodiacs, etc...
 
 
 - menu.php
