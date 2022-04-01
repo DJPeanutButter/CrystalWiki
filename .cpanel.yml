@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home3/lssnwfco/public_html/wiki/
-    - /bin/rm $DEPLOYPATH
+    - /bin/rm -f -d $DEPLOYPATH
     - /bin/cp -R * $DEPLOYPATH
