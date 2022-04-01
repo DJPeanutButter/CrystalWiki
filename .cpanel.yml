@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    -export DEPLOYPATH=/home3/lssnwfco/public_html/
+    - export DEPLOYPATH=/home3/lssnwfco/public_html/
     - /bin/cp /home3/lssnwfco/repositories/CrystalWiki/wiki.php $DEPLOYPATH
