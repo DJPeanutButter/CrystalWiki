@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home3/lssnwfco/public_html/wiki/
-    - /bin/cp /home3/lssnwfco/repositories/CrystalWiki/!(.git|.cpanel.yml|.gitattributes|README.md) $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
