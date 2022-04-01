@@ -2,4 +2,4 @@
 deployment:
   tasks:
     -export DEPLOYPATH=/home3/lssnwfco/public_html/
-    - /bin/cp /home3/lssnwfco/wiki.php $DEPLOYPATH
+    - /bin/cp /home3/lssnwfco/repositories/wiki.php $DEPLOYPATH
