@@ -87,8 +87,6 @@
           closeAllLists(e.target);
         });
       }
-      
-      autocomplete(document.getElementById("searchBar"), crystals);
     </script>
     <style>
       .autocomplete{
@@ -130,5 +128,8 @@
       </div>
       <input type="submit">
     </form>
+    <script>
+      autocomplete(document.getElementById("searchBar"), crystals);
+    </script>
   </body>
 </html>
