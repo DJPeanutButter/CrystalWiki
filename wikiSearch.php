@@ -87,6 +87,8 @@
           closeAllLists(e.target);
         });
       }
+      
+      autocomplete(document.getElementById("searchBar"), crystals);
     </script>
     <style>
       .autocomplete{
