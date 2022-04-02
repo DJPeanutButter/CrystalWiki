@@ -12,12 +12,14 @@
 			<input type="submit">
 		</form>
     <script>
-      var crystals = [
-<?
-    foreach (wikiSelect("Crystals","Name") as $tmp){
-      echo "\"".$tmp[0]."\", ";
+      var crystals = [<?
+    $query = wikiSelect("Crystals","Name");
+    foreach ($query as $i => $tmp){
+      echo "\"".$tmp[0]."\"";
+      if ($tmp !== end($query))
+        echo ", ";
     }
 ?>];
-  </script>
+    </script>
 	</body>
 </html>
