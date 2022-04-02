@@ -13,7 +13,10 @@
         if ($tmp !== end($query))
           echo ", ";
       }?>];
-      var searchBar = document.getElementById("searchBar");
+      var searchBar;
+      window.init = function(){
+        searchBar = document.getElementById("searchBar");
+      }
     </script>
   </head>
   <body>
