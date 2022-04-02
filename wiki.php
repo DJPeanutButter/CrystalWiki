@@ -7,9 +7,6 @@
   Dependancies
     wiki.js
     wikiStyles.css
-
-  TODO:
-    Design landing page
 -->
 <?
   /*
@@ -17,7 +14,7 @@
    *   wikiFunctions.php
    *   wikiDBConfig.php
    */
-   $checkMarkChar = "&#9989;";
+   $checkMarkChar = "&#x1F5F8;";
     if (!file_exists ($_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php"))
         echo $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php does not exist! <br>";
     else{
@@ -302,7 +299,7 @@
     else if ($pageType === "landing"){
 ?>
             <ul>
-                <li><form action="wiki.php" method="POST"><input type="hidden" name="message" value="Search is not yet ready"><input type="submit" class="link-button" value="Search Wiki"></form></li>
+                <li><a href="wikiSearch.php">Search</a></li>
                 <li>Crystals</li>
                 <ul>
 <?
