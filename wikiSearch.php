@@ -14,25 +14,25 @@
     <link rel="stylesheet" href="wikiStyles.css">
     <script>
       var crystals = [<?
-      for ($i = 0;$i<count($crystals);++$i)){
+      for ($i = 0;$i<count($crystals);++$i){
         if ($i>0)
           echo ", ";
         echo "\"".$crystals[i][0]."\"";
       }?>];
       var colors = [<?
-      for ($i = 0;$i<count($colors);++$i)){
+      for ($i = 0;$i<count($colors);++$i){
         if ($i>0)
           echo ", ";
         echo "\"".$colors[i][0]."\"";
       }?>];
       var lusters = [<?
-      for ($i = 0;$i<count($lusters);++$i)){
+      for ($i = 0;$i<count($lusters);++$i){
         if ($i>0)
           echo ", ";
         echo "\"".$lusters[i][0]."\"";
       }?>];
       var streaks = [<?
-      for ($i = 0;$i<count($streaks);++$i)){
+      for ($i = 0;$i<count($streaks);++$i){
         if ($i>0)
           echo ", ";
         echo "\"".$streaks[i][0]."\"";
