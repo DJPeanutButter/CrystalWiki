@@ -14,7 +14,7 @@
           echo ", ";
       }?>];
       var searchBar;
-      window.init = function(){
+      window.onload = function(){
         searchBar = document.getElementById("searchBar");
       }
     </script>
