@@ -22,19 +22,19 @@
       var colors = [<?
       foreach ($colors as $i => $tmp){
         echo "\"".$tmp[0]."\"";
-        if ($tmp !== end($colors))
+        if ($tmp.key !== end($colors).key)
           echo ", ";
       }?>];
       var lusters = [<?
       foreach ($lusters as $i => $tmp){
         echo "\"".$tmp[0]."\"";
-        if ($tmp !== end($lusters))
+        if ($tmp.key !== end($lusters).key)
           echo ", ";
       }?>];
       var streaks = [<?
       foreach ($streaks as $i => $tmp){
         echo "\"".$tmp[0]."\"";
-        if ($tmp !== end($streaks))
+        if ($tmp.key !== end($streaks).key)
           echo ", ";
       }?>];
     </script>
