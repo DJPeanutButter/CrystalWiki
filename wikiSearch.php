@@ -13,10 +13,6 @@
         if ($tmp !== end($query))
           echo ", ";
       }?>];
-      var searchBar;
-      window.onload = function(){
-        searchBar = document.getElementById("searchBar");
-      }
     </script>
   </head>
   <body>
@@ -27,7 +23,7 @@
       <input type="submit">
     </form>
     <script>
-      autocomplete(searchBar, crystals);
+      autocomplete(document.getElementById("searchBar"), crystals);
     </script>
   </body>
 </html>
