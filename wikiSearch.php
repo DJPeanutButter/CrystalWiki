@@ -12,7 +12,8 @@
         echo "\"".$tmp[0]."\"";
         if ($tmp !== end($query))
           echo ", ";
-      }?>], searchBar = document.getElementById("searchBar");
+      }?>];
+      var searchBar = document.getElementById("searchBar");
     </script>
   </head>
   <body>
