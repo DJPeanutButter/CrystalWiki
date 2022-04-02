@@ -14,28 +14,28 @@
     <link rel="stylesheet" href="wikiStyles.css">
     <script>
       var crystals = [<?
-      foreach ($crystals as $i => $tmp){
-        echo "\"".$tmp[0]."\"";
-        if ($tmp !== end($crystals))
+      for ($i = 0;$i<count($crystals);++$i)){
+        if ($i>0)
           echo ", ";
+        echo "\"".$crystals[i][0]."\"";
       }?>];
       var colors = [<?
-      foreach ($colors as $i => $tmp){
-        echo "\"".$tmp[0]."\"";
-        if ($tmp.key !== end($colors).key)
+      for ($i = 0;$i<count($colors);++$i)){
+        if ($i>0)
           echo ", ";
+        echo "\"".$colors[i][0]."\"";
       }?>];
       var lusters = [<?
-      foreach ($lusters as $i => $tmp){
-        echo "\"".$tmp[0]."\"";
-        if ($tmp.key !== end($lusters).key)
+      for ($i = 0;$i<count($lusters);++$i)){
+        if ($i>0)
           echo ", ";
+        echo "\"".$lusters[i][0]."\"";
       }?>];
       var streaks = [<?
-      foreach ($streaks as $i => $tmp){
-        echo "\"".$tmp[0]."\"";
-        if ($tmp.key !== end($streaks).key)
+      for ($i = 0;$i<count($streaks);++$i)){
+        if ($i>0)
           echo ", ";
+        echo "\"".$streaks[i][0]."\"";
       }?>];
     </script>
   </head>
