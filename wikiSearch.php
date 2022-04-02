@@ -1,5 +1,9 @@
 <doctype html>
-<?include_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";?>
+<?
+  include_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
+  
+  $query = wikiSelect("Crystals","Name");
+?>
 <html>
   <head>
     <title>Search for a crystal!</title>
@@ -7,7 +11,6 @@
     <link rel="stylesheet" href="wikiStyles.css">
     <script>
       var crystals = [<?
-      $query = wikiSelect("Crystals","Name");
       foreach ($query as $i => $tmp){
         echo "\"".$tmp[0]."\"";
         if ($tmp !== end($query))
