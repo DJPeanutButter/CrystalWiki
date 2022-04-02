@@ -2,10 +2,10 @@
 <?
   include_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
   
-  $crystals = wikiSelect("Crystals","Name","Name");
-  $colors = wikiSelect("Crystals","Color","Color");
-  $lusters = wikiSelect("Crystals","Luster","Luster");
-  $streaks = wikiSelect("Crystals","Streak","Streak");
+  $crystals = wikiQuery("SELECT DISTINCT Name FROM Crystals ORDER BY Name");
+  $colors = wikiQuery("SELECT DISTINCT Color FROM Crystals ORDER BY Color");
+  $lusters = wikiQuery("SELECT DISTINCT Luster FROM Crystals ORDER BY Luster");
+  $streaks = wikiQuery("SELECT DISTINCT Streak FROM Crystals ORDER BY Streak")
 ?>
 <html>
   <head>
