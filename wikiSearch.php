@@ -41,11 +41,9 @@
   </head>
   <body>
 <?
-  $fCrystal = $_GET["crystal"];
-  $fColor = isset($_GET["color"]);
-  $fLuster = isset($_GET["luster"]);
-  $fStreak = isset($_GET["streak"]);
-  if ($fCrystal !== ""){
+  if(isset($_GET["crystal"]))
+    $arrCrystal = wikiGetCrystalInfoByName ($_GET["crystal"]);
+  if (count($arrCrystal)>0){
     $message = "";
     if (isset($_GET["crystal"])){
       $tmp = wikiGetCrystalInfoByName ($rock)["Name"];
