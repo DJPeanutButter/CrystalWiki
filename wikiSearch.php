@@ -2,10 +2,10 @@
 <?
   include_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
   
-  $crystals = sort(wikiSelect("Crystals","Name"));
-  $colors = sort(wikiSelect("Crystals","Color"));
-  $lusters = sort(wikiSelect("Crystals","Luster"));
-  $streaks = sort(wikiSelect("Crystals","Streak"));
+  $crystals = wikiSelect("Crystals","Name","Name");
+  $colors = wikiSelect("Crystals","Color","Color");
+  $lusters = wikiSelect("Crystals","Luster","Luster");
+  $streaks = wikiSelect("Crystals","Streak","Streak");
 ?>
 <html>
   <head>
