@@ -48,7 +48,7 @@
   if ($fCrystal){
     $message = "";
     if (isset($_GET["crystal"])){
-      $tmp = wikiGetCrystalInfoByName ($rock)["Name"]
+      $tmp = wikiGetCrystalInfoByName ($rock)["Name"];
       $rock = $_GET["crystal"];
       $message .= "<a href=\"wiki.php?crystal='";
       $message .= $tmp;
