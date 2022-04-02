@@ -41,23 +41,24 @@
   </head>
   <body>
 <?
-  if(isset($_GET["crystal"]))
-    $arrCrystal = wikiGetCrystalInfoByName ($_GET["crystal"]);
-  if (count($arrCrystal)>0){
-    $message = "";
-    if (isset($_GET["crystal"])){
-      $tmp = wikiGetCrystalInfoByName ($rock)["Name"];
-      $rock = $_GET["crystal"];
-      $message .= "<a href=\"wiki.php?crystal='";
-      $message .= $tmp;
-      $message .= "'>";
-      $message .= $tmp;
-      $message .= "</a>";
+  if(isset($_GET["crystal"])){
+      $arrCrystal = wikiGetCrystalInfoByName($_GET["crystal"]);
+    if (count($arrCrystal)>0){
+      $message = "";
+      if (isset($_GET["crystal"])){
+        $tmp = wikiGetCrystalInfoByName ($rock)["Name"];
+        $rock = $_GET["crystal"];
+        $message .= "<a href=\"wiki.php?crystal='";
+        $message .= $tmp;
+        $message .= "'>";
+        $message .= $tmp;
+        $message .= "</a>";
+      }
+      
+      echo "<div class=\"search-results\">";
+      echo $message;
+      echo "</div>";
     }
-    
-    echo "<div class=\"search-results\">";
-    echo $message;
-    echo "</div>";
   }
 ?>
     <form action="<?echo $_SERVER['REQUEST_URI'];?>">
