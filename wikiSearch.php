@@ -11,6 +11,13 @@
 			</div>
 			<input type="submit">
 		</form>
-		<?echo var_dump(wikiSelect("Crystals","Name"));?>
+    <script>
+      var crystals = [
+<?
+    foreach (wikiSelect("Crystals","Name") as $tmp){
+      echo "\"".$tmp[0]."\", ";
+    }
+?>];
+  </script>
 	</body>
 </html>
