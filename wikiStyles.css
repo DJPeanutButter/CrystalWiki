@@ -1,6 +1,10 @@
 /* Custom Properties */
 :root{
-  --link-color: #069;
+  --link-color:       #069;
+  --body-bg-color:    #000;
+  --body-text-color:  #000;
+  --table-bg-color:   #000;
+  --table-text-color: #000;
 }
 
 /* Classes */
