@@ -1,39 +1,43 @@
 /* Custom Properties */
 :root{
-  --link-color:       #069;
-  --body-bg-color:    #000;
-  --body-text-color:  #000;
-  --table-bg-color:   #000;
-  --table-text-color: #000;
+  --link-color:            #069;
+  
+  --body-bg-color:         #000;
+  --body-text-color:       #000;
+  
+  --table-bg-color:        #000;
+  --table-text-color:      #000;
+  
+  --table-td-border-color: #000;
 }
 
 /* Classes */
 .link-button{
-    background: none;
-    border: none;
-    padding: 0;
-    font-family: arial, sans-serif;
-    color: var(--link-color);
-    text-decoration: underline;
-    cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: arial, sans-serif;
+  color: var(--link-color);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .wiki-menu{
-    position: absolute;
-    top: 0;
-    width: 10em;
-    left: 0;
+  position: absolute;
+  top: 0;
+  width: 10em;
+  left: 0;
 }
 
 .wiki-document{
-    margin-left: 10em;
+  margin-left: 10em;
 }
 
 .logo-square-small{
-    width: 8em;
-    height: 8em;
-    margin-left: 1em;
-    margin-top: 1em;
+  width: 8em;
+  height: 8em;
+  margin-left: 1em;
+  margin-top: 1em;
 }
 
 .wiki-menu ul{
@@ -45,8 +49,18 @@
 /* IDs */
 
 /* HTML Tags */
+body{
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
+}
+
+table{
+  background-color: var(--table-bg-color);
+  color: var(--table-text-color);
+}
+
 table td{
-    border: 1px solid black;
+  border: 1px solid var(--table-td-border-color);
 }
 
 a{
