@@ -91,7 +91,6 @@
     <style>
       .autocomplete{
         position: relative;
-        display: inline-block;
       }
       .autocomplete-items {
         position: absolute;
@@ -123,7 +122,7 @@
   </head>
   <body>
     <form action="<?echo $_SERVER['REQUEST_URI'];?>">
-      <div class="autocomplete" style="width: 300px;">
+      <div class="autocomplete">
         <input id="searchBar" type="text" name="crystal" placeholder="Crystal Name">
       </div>
       <input type="submit">
