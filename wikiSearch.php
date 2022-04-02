@@ -40,6 +40,28 @@
     </script>
   </head>
   <body>
+<?
+  $fCrystal = isset($_GET["crystal"]);
+  $fColor = isset($_GET["color"]);
+  $fLuster = isset($_GET["luster"]);
+  $fStreak = isset($_GET["streak"]);
+  if ($fCrystal){
+    $message = "";
+    if (isset($_GET["crystal"])){
+      $tmp = wikiGetCrystalInfoByName ($rock)["Name"]
+      $rock = $_GET["crystal"];
+      $message .= "<a href=\"wiki.php?crystal='";
+      $message .= $tmp;
+      $message .= "'>";
+      $message .= $tmp;
+      $message .= "</a>";
+    }
+    
+    echo "<div class=\"search-results\">";
+    echo $message;
+    echo "</div>";
+  }
+?>
     <form action="<?echo $_SERVER['REQUEST_URI'];?>">
       <fieldset>
         <legend>Search by Name</legend>
