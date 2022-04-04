@@ -8,6 +8,8 @@
   --table-bg-color:        #ffffff36;
   --table-text-color:      #1e1151a6;
   --table-border-color:    #1e1151a6;
+  
+  --hr-color:              var(--body-text-color);
 }
 
 /* Classes */
@@ -93,4 +95,8 @@ table{
 
 a{
   color: var(--link-color);
+}
+
+hr{
+  color: var(--hr-color);
 }
