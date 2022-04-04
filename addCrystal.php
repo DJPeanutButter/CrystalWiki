@@ -19,6 +19,7 @@
 <html>
     <head>
         <title>Wiki Test</title>
+        <link rel="stylesheet" href="wikiStyles.css">
         <script src="wiki.js"></script>
         <div class="message-div"><?
             if (isset($_POST["message"]))
