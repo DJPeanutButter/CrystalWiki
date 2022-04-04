@@ -47,7 +47,9 @@
             echo "<textarea>".$row['ConsonantCrystals']."</textarea>" . "<br>";
             
         }
-        echo "<textarea>".var_dump($rocks)."</textarea>" . "<br>";
+        echo "<textarea>";
+        echo var_dump($rocks);
+        echo "</textarea>" . "<br>";
     }catch(PDOException $e){
         echo "Boo<br>Error: " . $e->getMessage();
     }
