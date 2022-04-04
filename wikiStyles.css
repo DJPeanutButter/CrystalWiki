@@ -98,5 +98,5 @@ a{
 }
 
 hr{
-  color: var(--hr-color);
+  border-color: var(--hr-color);
 }
