@@ -8,6 +8,12 @@
   --table-bg-color:        #ffffff36;
   --table-text-color:      #1e1151a6;
   --table-border-color:    #1e1151a6;
+
+  --input-bg-color:        var(--table-bg-color);
+  --input-text-color:      var(--table-text-color);
+  --placeholder-color:     #09156ba1;
+
+  --fieldset-legend-color: var(--link-color);
   
   --hr-color:              var(--body-text-color);
   
@@ -108,5 +114,14 @@ hr{
 }
 
 input, textarea{
-  background-color: var(--table--bg-color);
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+}
+
+::placeholder{
+  color: var(--placeholder-color);
+}
+
+fieldset legend{
+  color: var(--fieldset-legend-color);
 }
