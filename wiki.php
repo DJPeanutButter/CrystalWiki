@@ -110,7 +110,7 @@
 ?>
             <table>
                 <tr>
-                    <td><?if ($chakras[6]){echo &checkMarkChar;}?></td>
+                    <td><?if ($chakras[6]){echo $checkMarkChar;}?></td>
                     <td>Sahastrara (Crown)</td>
                 </tr>
                 <tr>
