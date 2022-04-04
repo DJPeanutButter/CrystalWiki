@@ -106,3 +106,7 @@ a{
 hr{
   border-color: var(--hr-color);
 }
+
+input, textarea{
+  background-color: var(--table--bg-color);
+}
