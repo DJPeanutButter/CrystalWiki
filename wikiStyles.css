@@ -10,6 +10,8 @@
   --table-border-color:    #1e1151a6;
   
   --hr-color:              var(--body-text-color);
+  
+  --timestamp-font-size    50%;
 }
 
 /* Classes */
@@ -52,6 +54,10 @@
   color: var(--link-color);
   text-decoration: underline;
   cursor: pointer;
+}
+
+.timestamp{
+  font-size: var(--timestamp-font-size);
 }
 
 .wiki-menu{
