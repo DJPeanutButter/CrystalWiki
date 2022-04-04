@@ -39,11 +39,15 @@
          */
         $stmt = $conn->prepare ("SELECT ConsonantCrystals FROM Crystals");
         $stmt->execute();
+        $rocks = [];
         
-        $tmp = [];
         while ($row = $stmt->fetch()){
+            $tmp = explode (",",$row['ConsonantCrystals']);
+            array_push($rocks, $tmp);
             echo "<textarea>".$row['ConsonantCrystals']."</textarea>" . "<br>";
+            
         }
+        echo "<textarea>".var_dump($rocks)."</textarea>" . "<br>";
     }catch(PDOException $e){
         echo "Boo<br>Error: " . $e->getMessage();
     }
