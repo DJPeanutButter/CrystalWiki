@@ -7,7 +7,7 @@
   else{
       require_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
       
-      if (isset($_POST["Name"]))
+      if (isset($_POST["name"]))
         echo "!!!!";
       
       if (isset($_GET["crystal"])){
