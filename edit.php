@@ -2,25 +2,26 @@
 <html>
     <head>
 <?
-    if (!file_exists ($_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php"))
-        echo $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php does not exist! <br>";
-    else{
-        require_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
-        
-        if (isset($_GET["crystal"])){
-            if (!$wikiData = wikiGetCrystalInfoByName($_GET["crystal"])){
-                exit("Could not find crystal by the name of ".$_GET["crystal"]);
-            }
+  if (!file_exists ($_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php"))
+      echo $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php does not exist! <br>";
+  else{
+      require_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
+      
+      
+      if (isset($_GET["crystal"])){
+          if (!$wikiData = wikiGetCrystalInfoByName($_GET["crystal"])){
+              exit("Could not find crystal by the name of ".$_GET["crystal"]);
+          }
 ?>
       <title>Edit <?echo $wikiData["name"]?></title>
-<?}else{?>
+<?      }else{?>
       <title>No crystal selected!</title>
-<?}?>
+<?    }?>
       <link rel="stylesheet" href="wikiStyles.css">
     </head>
     <body>
 <?
-    if (isset($_GET["crystal"])){
+      if (isset($_GET["crystal"])){
 ?>
         <form action="edit.php?<?echo $_SERVER['QUERY_STRING'];?>" method="post">
             <table>
@@ -56,8 +57,8 @@
                     <td><p>Chakras</p></td>
                     <td>
 <?
-    $tmp = $wikiData ["Chakras"];
-    $tmpArr = explode (",", $tmp);
+        $tmp = $wikiData ["Chakras"];
+        $tmpArr = explode (",", $tmp);
 ?>
                         <table>
                             <tr>
@@ -105,8 +106,8 @@
                     </td>
                     <td>
 <?
-    $tmp = $wikiData ["Planets"];
-    $tmpArr = explode (",", $tmp);
+        $tmp = $wikiData ["Planets"];
+        $tmpArr = explode (",", $tmp);
 ?>
                         <table>
                             <tr>
@@ -142,8 +143,8 @@
                     </td>
                     <td>
 <?
-    $tmp = $wikiData ["Elements"];
-    $tmpArr = explode (",", $tmp);
+        $tmp = $wikiData ["Elements"];
+        $tmpArr = explode (",", $tmp);
 ?>
                         <table>
                             <tr>
@@ -167,8 +168,8 @@
                     </td>
                     <td>
 <?
-    $tmp = $wikiData ["Zodiac"];
-    $tmpArr = explode (",", $tmp);
+        $tmp = $wikiData ["Zodiac"];
+        $tmpArr = explode (",", $tmp);
 ?>
                         <table>
                             <tr>
@@ -211,9 +212,9 @@
                 </tr>
             </table>
         </form>
-<?}else{?>
+<?    }else{?>
         <p>No crystal selected!</p>
-<?}?>
+<?    }?>
     </body>
 </html>
 <?}?>
