@@ -20,7 +20,9 @@
     </head>
     <body>
 <?
-    if (isset($_GET["crystal"])){
+    if (isset($_POST["Name"]){
+      echo "<pre>".var_dump($_POST)."</pre>";
+    }else if (isset($_GET["crystal"])){
 ?>
         <form action="edit.php?<?echo $_SERVER['QUERY_STRING'];?>" method="post">
             <table>
