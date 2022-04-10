@@ -12,7 +12,7 @@
         echo var_dump($postData);
         
             //Generate strings for $wikiChakras, $wikiPlanets, $wikiElements & $wikiZodiac
-            /*$wikiChakras = wikiEncode(array(($_POST ["chakra1"] === "on"),
+            $wikiChakras = wikiEncode(array(($_POST ["chakra1"] === "on"),
                                             ($_POST ["chakra2"] === "on"),
                                             ($_POST ["chakra3"] === "on"),
                                             ($_POST ["chakra4"] === "on"),
@@ -46,7 +46,7 @@
                                             ($_POST ["zodAquarius"] === "on"),
                                             ($_POST ["zodPisces"] === "on")));
             
-            
+            /*
           try {
     				$conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
             
