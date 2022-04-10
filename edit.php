@@ -18,7 +18,7 @@
                                             ($_POST ["chakra5"] === "on"),
                                             ($_POST ["chakra6"] === "on"),
                                             ($_POST ["chakra7"] === "on")));
-        echo "!";
+        echo $wikiChakras;
             $wikiPlanets = wikiEncode(array(($_POST ["plnSaturn"] === "on"),
                                             ($_POST ["plnJupiter"] === "on"),
                                             ($_POST ["plnMars"] === "on"),
