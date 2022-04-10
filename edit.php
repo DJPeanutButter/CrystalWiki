@@ -8,7 +8,7 @@
       require_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
       
       if (isset($_POST["name"])){
-        echo print_r($_POST());
+        echo print_r($_POST);
       }
       
       if (isset($_GET["crystal"])){
