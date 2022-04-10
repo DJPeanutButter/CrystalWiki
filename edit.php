@@ -11,7 +11,7 @@
         $postData = $_POST;
         echo var_dump($postData);
             //Generate strings for $wikiChakras, $wikiPlanets, $wikiElements & $wikiZodiac
-            $wikiChakras = wikiEncode(array(($_POST ["chakra1"] === "on"),
+            $wikiChakras = json_encode(array(($_POST ["chakra1"] === "on"),
                                             ($_POST ["chakra2"] === "on"),
                                             ($_POST ["chakra3"] === "on"),
                                             ($_POST ["chakra4"] === "on"),
