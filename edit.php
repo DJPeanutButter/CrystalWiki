@@ -12,7 +12,7 @@
         echo var_dump($postData);
         
             //Generate strings for $wikiChakras, $wikiPlanets, $wikiElements & $wikiZodiac
-            $wikiChakras = wikiEncode(array(($_POST ["chakra1"] === "on"),
+            /*$wikiChakras = wikiEncode(array(($_POST ["chakra1"] === "on"),
                                             ($_POST ["chakra2"] === "on"),
                                             ($_POST ["chakra3"] === "on"),
                                             ($_POST ["chakra4"] === "on"),
@@ -73,7 +73,7 @@
           }catch(PDOException $e){
             echo "Boo<br>Error: " . $e->getMessage();
             echo "<script>var message=\"$e->getMessage()\"</script>";
-          }
+          }*/
       }
       
       if (isset($_GET["crystal"])){
