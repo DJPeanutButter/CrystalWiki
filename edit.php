@@ -8,7 +8,8 @@
       require_once $_SERVER['DOCUMENT_ROOT'] . "/../php/wikiDBConfig.php";
       
       if (isset($_POST["name"])){
-        echo json_encode($_POST);
+        $postData = $_POST;
+        echo json_encode($postData);
       }
       
       if (isset($_GET["crystal"])){
