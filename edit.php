@@ -45,6 +45,8 @@
                                             ($_POST ["zodCapricorn"] === "on"),
                                             ($_POST ["zodAquarius"] === "on"),
                                             ($_POST ["zodPisces"] === "on")));
+                                            
+          echo var_dump($wikiChakras);
             
             /*
           try {
