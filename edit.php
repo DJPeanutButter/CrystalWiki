@@ -9,7 +9,7 @@
       
       if (isset($_POST["name"])){
         $postData = $_POST;
-        echo json_encode($postData);
+        echo var_dump($postData);
       }
       
       if (isset($_GET["crystal"])){
