@@ -1,17 +1,17 @@
 /* Custom Properties */
 :root{
-  --link-color:            #d29393;
+  --link-color:            #069;
   
-  --body-bg-color:         #5f619a;
-  --body-text-color:       #9db0db;
+  --body-bg-color:         #fff;
+  --body-text-color:       #000;
   
-  --table-bg-color:        #ffffff36;
+  --table-bg-color:        #c8c8c8a0;
   --table-text-color:      #1e1151a6;
   --table-border-color:    #1e1151a6;
 
   --input-bg-color:        var(--table-bg-color);
   --input-text-color:      var(--table-text-color);
-  --placeholder-color:     #09156ba1;
+  --placeholder-color:     #c8c8c8a1;
 
   --fieldset-legend-color: var(--link-color);
   
